@@ -66,8 +66,12 @@ suits.forEach((suit, suit_idx) => {
 
 shuffleBtn.addEventListener('click', () => {
   const cards = document.querySelectorAll('.card');
-  cards.forEach(card => {
-    card.style.top = '50%';
-    card.style.left = '50%';
+
+  cards.forEach((card, idx) => {
+    setTimeout(() => {
+      card.style.zIndex = 52 - idx;
+      card.style.top = '50%';
+      card.style.left = '50%';
+    }, idx * 200);
   })
 })
