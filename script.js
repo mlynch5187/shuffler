@@ -21,15 +21,25 @@ const container = document.getElementById
 ('container');
 
 function CreateCard(number, suit) {
-  <div class="card">
-    <span class="number top">
-      A
-    </span>
-    <p class="suit">
-      ♥️
-    </p>
-    <span class="number bottom">
-      A
-    </span>
-  </div>
+  const cardEl = document.createElement
+  ('div');
+
+  cardEl.classList.add('card');
+
+    if(suit.color === red)  {
+      cardEl.classList.add('red');
+    }
+
+    cardEl.innerHTML =
+      <span class="number top">
+        $(number)
+      </span>
+      <p class="suit">
+        $(suit.icon)
+      </p>
+      <span class="number bottom">
+        $(number)
+      </span>
+    ;
+  container.appendChild(cardEl);
 }
