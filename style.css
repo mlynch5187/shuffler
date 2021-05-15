@@ -15,9 +15,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 350px;
-  width: 200px;
+  position: absolute;
+  height: 175px;
+  width: 120px;
 }
 
 .card.red {
@@ -40,5 +40,5 @@ body {
 }
 
 .card .suit {
-  font-size: 7rem;
+  font-size: 3.5rem;
 }

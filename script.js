@@ -20,7 +20,7 @@ const suits = [
 const container = document.getElementById
 ('container');
 
-function createCard(number, suit) {
+function createCard({number, suit, suit_idx, number_idx}) {
   const cardEl = document.createElement
   ('div');
 
@@ -29,6 +29,10 @@ function createCard(number, suit) {
     if(suit.color === 'red')  {
       cardEl.classList.add('red');
     }
+
+    cardEl.style.top = suit_idx * 175 + 'px';
+    cardEl.style.left = number_idx * 120 + 'px';
+
 
     cardEl.innerHTML =  `
       <span class="number top">
@@ -44,9 +48,15 @@ function createCard(number, suit) {
   container.appendChild(cardEl);
 }
 
-//Creating Cards
-suits.forEach(suit => {
-  numbers.forEach(number => {
-    createCard(number, suit);
+//Place Cards
+suits.forEach((suit, suit_idx) => {
+  numbers.forEach((number, number_idx) => {
+    const cardDetails = {
+      number,
+      suit,
+      suit_idx,
+      number_idx
+    }
+    createCard(cardDetails);
   });
 });
