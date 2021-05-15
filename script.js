@@ -19,8 +19,10 @@ const suits = [
 
 const container = document.getElementById
 ('container');
+const shuffleBtn = document.getElementById
+('shuffle');
 
-// const spacing = 5;
+const spacing = 10;
 
 function createCard({number, suit, suit_idx, number_idx}) {
   const cardEl = document.createElement
@@ -61,3 +63,11 @@ suits.forEach((suit, suit_idx) => {
     createCard(cardDetails);
   });
 });
+
+shuffleBtn.addEventListener('click', () => {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.style.top = '50%';
+    card.style.left = '50%';
+  })
+})

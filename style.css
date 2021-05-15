@@ -4,10 +4,6 @@ body {
   font-family: 'Poppins', 'sans-serif'
 }
 
-.container {  
-  position: relative;
-}
-
 .card {
   border-radius: 5px;
   border: 2px solid black;
@@ -15,8 +11,14 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
+  margin: 5px;
   height: 175px;
   width: 120px;
+  /* transition: all 2s linear; */
+}
+
+.container {
+  position: relative;
 }
 
 .card.red {
@@ -25,7 +27,7 @@ body {
 
 .card .number {
   position: absolute;
-  font-size: 3rem
+  font-size: 2 rem
 }
 
 .card .number.top {
