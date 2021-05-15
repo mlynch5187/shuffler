@@ -20,6 +20,8 @@ const suits = [
 const container = document.getElementById
 ('container');
 
+// const spacing = 5;
+
 function createCard({number, suit, suit_idx, number_idx}) {
   const cardEl = document.createElement
   ('div');
@@ -30,9 +32,8 @@ function createCard({number, suit, suit_idx, number_idx}) {
       cardEl.classList.add('red');
     }
 
-    cardEl.style.top = suit_idx * 175 + 'px';
-    cardEl.style.left = number_idx * 120 + 'px';
-
+    cardEl.style.top = suit_idx * 175 + spacing * suit_idx + 'px';
+    cardEl.style.left = number_idx * 120 + spacing * number_idx + 'px';
 
     cardEl.innerHTML =  `
       <span class="number top">

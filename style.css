@@ -4,9 +4,8 @@ body {
   font-family: 'Poppins', 'sans-serif'
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
+.container {  
+  position: relative;
 }
 
 .card {
