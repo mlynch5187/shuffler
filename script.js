@@ -22,6 +22,8 @@ const container = document.getElementById
 const shuffleBtn = document.getElementById
 ('shuffle');
 
+
+cons positions = [];
 const spacing = 10;
 
 function createCard({number, suit, suit_idx, number_idx}) {
@@ -78,4 +80,17 @@ shuffleBtn.addEventListener('click', () => {
       card.style.left = '50%';
     }, idx * 100);
   })
+
+  setTimeout(shuffleback, 3000);
 })
+
+function shuffleback() {
+  shufflePositions();
+}
+
+function shufflePositions() {
+  for(let i=0; i<1000; i++) {
+    const rand1 = Math.floor(Math.random() * 52);
+    const rand2 = Math.floor(Math.random() * 52);
+  }
+}
