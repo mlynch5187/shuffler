@@ -1,5 +1,5 @@
-const numbers = ['1', '2', '3', '4', '5', '6', '7',
-                '8', '9', '10', 'J', 'Q', 'K', 'A'];
+const numbers = ['A', '2', '3', '4', '5', '6', '7', '8',
+                '9', '10', 'J', 'Q', 'K'];
 
 const suits = [
   {
@@ -56,7 +56,7 @@ function createCard({number, suit, suit_idx, number_idx}) {
       </span>
     `;
   container.appendChild(cardEl);
-}
+};
 
 //Place Cards
 suits.forEach((suit, suit_idx) => {
@@ -82,11 +82,20 @@ shuffleBtn.addEventListener('click', () => {
     }, idx * 100);
   });
 
-  setTimeout(shuffleBack, 3000);
+  setTimeout(shuffleBack, 6000);
 });
 
 function shuffleBack() {
   shufflePositions();
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach((card, idx) => {
+    setTimeout(() => {
+
+      card.style.top = positions[idx][0];
+      card.style.left = positions[idx][1];
+    }, idx * 50);
+  });
 }
 
 function shufflePositions() {
@@ -96,5 +105,5 @@ function shufflePositions() {
       const temp = positions[rand1];
       positions[rand1] = positions[rand2];
       positions[rand2] = temp;
-  }
-}
+  };
+};
