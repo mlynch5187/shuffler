@@ -23,7 +23,7 @@ const shuffleBtn = document.getElementById
 ('shuffle');
 
 
-cons positions = [];
+let positions = [];
 const spacing = 10;
 
 function createCard({number, suit, suit_idx, number_idx}) {
@@ -36,10 +36,11 @@ function createCard({number, suit, suit_idx, number_idx}) {
       cardEl.classList.add('red');
     }
 
+    const TOP = suit_idx * 175 + spacing * suit_idx + 'px';
+    const LEFT = number_idx * 120 + spacing * number_idx + 'px';
+
     positions.push([TOP, LEFT]);
 
-    CONST TOP = suit_idx * 175 + spacing * suit_idx + 'px';
-    CONST LEFT = number_idx * 120 + spacing * number_idx + 'px';
     cardEl.style.top = TOP;
     cardEl.style.left = LEFT;
 
@@ -79,18 +80,21 @@ shuffleBtn.addEventListener('click', () => {
       card.style.top = '50%';
       card.style.left = '50%';
     }, idx * 100);
-  })
+  });
 
-  setTimeout(shuffleback, 3000);
-})
+  setTimeout(shuffleBack, 3000);
+});
 
-function shuffleback() {
+function shuffleBack() {
   shufflePositions();
 }
 
 function shufflePositions() {
-  for(let i=0; i<1000; i++) {
-    const rand1 = Math.floor(Math.random() * 52);
-    const rand2 = Math.floor(Math.random() * 52);
+  for (let i = 0; i < 1000; i++) {
+      const rand1 = Math.floor(Math.random() * 52);
+      const rand2 = Math.floor(Math.random() * 52);
+      const temp = positions[rand1];
+      positions[rand1] = positions[rand2];
+      positions[rand2] = temp;
   }
 }
