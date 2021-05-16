@@ -14,7 +14,7 @@ body {
   position: absolute;
   margin: 5px;
   height: 175px;
-  width: 120px;
+  width: 100px;
   transition: top 100ms linear, left 100ms linear;
 }
 

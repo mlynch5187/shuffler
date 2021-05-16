@@ -58,7 +58,6 @@ function createCard({number, suit, suit_idx, number_idx}) {
   container.appendChild(cardEl);
 };
 
-//Place Cards
 suits.forEach((suit, suit_idx) => {
   numbers.forEach((number, number_idx) => {
     const cardDetails = {
