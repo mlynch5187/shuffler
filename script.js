@@ -34,8 +34,12 @@ function createCard({number, suit, suit_idx, number_idx}) {
       cardEl.classList.add('red');
     }
 
-    cardEl.style.top = suit_idx * 175 + spacing * suit_idx + 'px';
-    cardEl.style.left = number_idx * 120 + spacing * number_idx + 'px';
+    positions.push([TOP, LEFT]);
+
+    CONST TOP = suit_idx * 175 + spacing * suit_idx + 'px';
+    CONST LEFT = number_idx * 120 + spacing * number_idx + 'px';
+    cardEl.style.top = TOP;
+    cardEl.style.left = LEFT;
 
     cardEl.innerHTML =  `
       <span class="number top">
@@ -72,6 +76,6 @@ shuffleBtn.addEventListener('click', () => {
       card.style.zIndex = 52 - idx;
       card.style.top = '50%';
       card.style.left = '50%';
-    }, idx * 200);
+    }, idx * 100);
   })
 })
