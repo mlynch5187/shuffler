@@ -23,7 +23,7 @@ so I took the opportunity to set these objectives:
 - HTML
 - Heroku
 
-![Image1](https://raw.githubusercontent.com/mlynch5187/shuffler/blob/main/images/1.png)
-![Image2](https://raw.githubusercontent.com/mlynch5187/shuffler/blob/main/images/2.png)
-![Image3](https://raw.githubusercontent.com/mlynch5187/shuffler/blob/main/images/3.png)
-![Image4](https://raw.githubusercontent.com/mlynch5187/shuffler/blob/main/images/4.png)
+![Image1](https://raw.githubusercontent.com/mlynch5187/shuffler/main/images/1.png)
+![Image2](https://raw.githubusercontent.com/mlynch5187/shuffler/main/images/2.png)
+![Image3](https://raw.githubusercontent.com/mlynch5187/shuffler/main/images/3.png)
+![Image4](https://raw.githubusercontent.com/mlynch5187/shuffler/main/images/4.png)
