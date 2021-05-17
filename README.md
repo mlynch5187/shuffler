@@ -21,7 +21,7 @@ so I took the opportunity to set these objectives:
 
 - Add a button to reset the deck
 - Make shuffling the cards two different actions: stack, and split
-- 
+
 ## Tools Used
 
 - Javascript
