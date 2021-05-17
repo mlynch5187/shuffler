@@ -1,6 +1,10 @@
 # Shuffler
 
-Shuffler is a card shuffling application.
+Shuffler is a Javascript card shuffling application created for a technical assessment.
+
+You can access Shuffler at it's Heroku domain:
+
+https://shuffler.herokuapp.com/
 
 ## Goals
 
@@ -17,3 +21,9 @@ so I took the opportunity to set these objectives:
 - Javascript
 - CSS
 - HTML
+- Heroku
+
+[![Image1](https://raw.githubusercontent.com/mlynch5187/shuffler/images/1.png "Image1")
+[![Image2](https://raw.githubusercontent.com/mlynch5187/shuffler/images/2.png "Image2")
+[![Image3](https://raw.githubusercontent.com/mlynch5187/shuffler/images/3.png "Image3")
+[![Image4](https://raw.githubusercontent.com/mlynch5187/shuffler/images/4.png "Image4")
