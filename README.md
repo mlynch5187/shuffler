@@ -13,9 +13,15 @@ However, This project was pretty open-ended, and I wanted to challenge myself,
 so I took the opportunity to set these objectives:
 
 - Create a card shuffling app in a less familiar language (Javascript rather than Ruby)
+- An MVP should have a single button to shuffle all the cards
 - I gave myself an entire weekend, 2.5 days, to research and implement features
 - The project should be lightweight and to the point. Try not to include unnecessary folders, etc.
 
+## Future Goals
+
+- Add a button to reset the deck
+- Make shuffling the cards two different actions: stack, and split
+- 
 ## Tools Used
 
 - Javascript
