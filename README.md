@@ -1,6 +1,6 @@
 # Shuffler
 
-Shuffler is a Javascript card shuffling application created for a technical assessment.
+Shuffler is a Javascript card shuffling application.
 
 You can access Shuffler at it's Heroku domain:
 
